@@ -53,12 +53,36 @@ header p {
 .pad4 {
   background: #34b86b;
 }
-.pad4 {
-  background: #77e0d2;
-}
+
 .pad5 {
   background: #2b2727;
 }
 .pad6 {
   background: #9c5487;
+}
+
+/*Add animation*/
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  bottom: 0%;
+  z-index: -1;
 }
