@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
     const ball = document.createElement("div");
     visual.appendChild(ball);
     ball.style.backgroundColor = colors[num];
-    ball.style.animation = "jump 2s ease";
+    ball.style.animation = "jump 3s ease";
     ball.addEventListener("animationend", function() {
       visual.removeChild(this);
     });

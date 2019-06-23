@@ -7,6 +7,13 @@
 }
 
 body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(95, 89, 93, 0.73),
+      rgba(70, 71, 83, 0.52)
+    ),
+    url("./bg.jpg");
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -19,13 +26,16 @@ body {
 }
 
 header h1 {
-  font-size: 40px;
-  margin: 50px 0 30px 0;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
   text-align: center;
+  color: #fff;
 }
 
 header p {
-  font-size: 20px;
+  font-size: 25px;
+  color: lightgrey;
 }
 
 .pads {
@@ -38,6 +48,15 @@ header p {
   height: 100px;
   width: 100px;
   flex: 1;
+}
+
+.pads > div:hover {
+  cursor: pointer;
+  border: 2px solid rgb(59, 87, 211);
+}
+
+.pads > div:active {
+  background: #524b50;
 }
 
 .pad1 {
@@ -69,7 +88,7 @@ header p {
     left: 20%;
   }
   50% {
-    bottom: 50%;
+    bottom: 80%;
     left: 50%;
   }
   100% {
